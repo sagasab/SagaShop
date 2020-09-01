@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  margin: 0.6rem 6rem 0.6rem 6rem;
+}
+
+.dropdown {
+  float: right;
+  margin: 0 1rem 0 1rem;
+  font-weight: 300;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.2rem;
+  padding: 0;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav span, nav li {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  min-width: 4rem;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+}
+
+nav ul li:hover {
+  background-color: #00b0ff;
+}
+
+.message {
+  background-color: #00c853;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  color: #1B5E20;
+  font-weight: 300;
+}
+
+.message a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 1rem 6rem 1rem 6rem;
+}
+
+.items {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.product-item {
+  margin: 1rem;
+}
+
+.product-item .image-giftcard {
+  background-image: url("../images/google-giftcard.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(616px/5);
+  height: calc(889px/5);
+}
+
+.product-item .image-giftcard .price {
+  float: right;
+  margin-right: 0.2rem;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+
+.product-item .image-diamond {
+  background-image: url("../images/diamond.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(616px/5);
+  height: calc(889px/5);
+}
+
+.product-item span {
+  font-weight: 300;
+  font-size: small;
+}
+
+.product-item .price-label {
+  color: #00E676;
+}
+
+@media (max-width: 600px) {
+  nav {
+    margin: 1rem;
+  }
+  .container {
+    margin: 0;
+  }
+  .message {
+    margin: 1rem;
+  }
+  .items {
+    margin: 0 auto 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
