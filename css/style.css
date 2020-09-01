@@ -121,7 +121,7 @@ nav ul li:hover {
   color: #00E676;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   nav {
     margin: 1rem;
   }
@@ -130,6 +130,7 @@ nav ul li:hover {
   }
   .message {
     margin: 1rem;
+    font-size: small;
   }
   .items {
     margin: 0 auto 0 auto;
