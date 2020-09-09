@@ -6,5 +6,17 @@
 <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
   <!-- Page Wrapper -->
 
+  <script>
+  FB.login(function(response) {
+  // handle the response
+   if (response.status === 'connected') {
+    // Logged into your webpage and Facebook.\
+    alert("Done");
+  } else {
+    // The person is not logged into your webpage or we are unable to tell. 
+    alert("Failed")
+  }
+}, {scope: 'public_profile,email'});
+  </script>
 </body>
 </html>
